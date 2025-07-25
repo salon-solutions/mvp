@@ -6,10 +6,9 @@ export async function POST(request: NextRequest) {
   try {
     const { name, email, password } = await request.json()
 
-    // Validate input
     if (!name || !email || !password) {
       return NextResponse.json(
-        { error: "Nome, email e senha são obrigatórios" },
+        { error: "Missing required fields" },
         { status: 400 }
       )
     }
@@ -21,7 +20,7 @@ export async function POST(request: NextRequest) {
 
     if (existingUser) {
       return NextResponse.json(
-        { error: "Usuário já existe com este email" },
+        { error: "User already exists" },
         { status: 400 }
       )
     }
@@ -38,17 +37,14 @@ export async function POST(request: NextRequest) {
       }
     })
 
-    // Remove password from response
-    const { password: _password, ...userWithoutPassword } = user
-
     return NextResponse.json(
-      { message: "Usuário criado com sucesso", user: userWithoutPassword },
+      { message: "User created successfully", userId: user.id },
       { status: 201 }
     )
   } catch (error) {
     console.error("Registration error:", error)
     return NextResponse.json(
-      { error: "Erro interno do servidor" },
+      { error: "Internal server error" },
       { status: 500 }
     )
   }

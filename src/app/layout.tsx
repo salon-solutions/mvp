@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { AuthProvider } from "@/components/providers/auth-provider";
+import { Providers } from "@/components/providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Next.js Auth App",
-  description:
-    "Aplicação completa de autenticação com Next.js, TypeScript, Next-Auth, Prisma e MongoDB",
+  title: "Auth App",
+  description: "Authentication app with Next.js and Prisma",
 };
 
 export default function RootLayout({
@@ -17,9 +16,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" data-lt-installed="true" suppressHydrationWarning="true">
+    <html lang="en">
       <body className={inter.className}>
-        <AuthProvider>{children}</AuthProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
