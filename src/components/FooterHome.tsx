@@ -32,7 +32,7 @@ export default function FooterHome() {
                 <i className="iconify solar:magic-stick-3-bold text-white text-xl"></i>
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-black font-inter uppercase">SALLA</span>
+                <span className="text-xl font-black font-inter uppercase">ParlorHub</span>
                 <span className="text-sm text-gray-400 -mt-1">
                   Assistente Inteligente
                 </span>
@@ -129,7 +129,7 @@ export default function FooterHome() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-gray-400 text-sm text-center sm:text-left">
-              © 2025 SALLA. Todos os direitos reservados.
+              © 2025 ParlorHub. Todos os direitos reservados.
             </p>
             <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-sm">
               <div className="flex items-center gap-2 text-gray-400">

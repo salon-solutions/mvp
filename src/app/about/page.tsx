@@ -8,12 +8,12 @@ export default function AboutPage() {
     {
       name: 'Daniel',
       role: 'CEO & Fundador',
-      description: 'Criou o SALLA para revolucionar a velocidade das soluções para salões.',
+      description: 'Criou o ParlorHub para revolucionar a velocidade das soluções para salões.',
     },
     {
       name: 'N',
       role: 'CTO & Fundador',
-      description: 'Co-fundador focado na arquitetura técnica e operações do SALLA.',
+      description: 'Co-fundador focado na arquitetura técnica e operações do ParlorHub.',
     },
   ];
 
@@ -51,7 +51,7 @@ export default function AboutPage() {
     },
     {
       title: 'MVP lançado',
-      description: 'Lançamento do primeiro MVP do SALLA pelos co-fundadores, com funcionalidades essenciais e foco na velocidade.',
+      description: 'Lançamento do primeiro MVP do ParlorHub pelos co-fundadores, com funcionalidades essenciais e foco na velocidade.',
     },
   ];
 
@@ -86,7 +86,7 @@ export default function AboutPage() {
 
               {/* Subheadline */}
               <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-8 sm:mb-12 leading-relaxed animate-slide-up animate-stagger-2 px-2">
-                <strong className="text-gray-700">SALLA nasceu da frustração real</strong> de Daniel e Natan com a lentidão das soluções existentes para salões de beleza.
+                <strong className="text-gray-700">ParlorHub nasceu da frustração real</strong> de Daniel e Natan com a lentidão das soluções existentes para salões de beleza.
               </p>
 
               {/* Goals */}
@@ -123,7 +123,7 @@ export default function AboutPage() {
                   Revolucionar a velocidade das soluções para salões
                 </h3>
                 <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-4 sm:mb-6">
-                  Cansados da lentidão das soluções existentes, Daniel e Natan criaram o SALLA para ser a plataforma 
+                  Cansados da lentidão das soluções existentes, Daniel e Natan criaram o ParlorHub para ser a plataforma 
                   mais rápida e eficiente do mercado de beleza.
                 </p>
                 <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-6 sm:mb-8">
@@ -162,7 +162,7 @@ export default function AboutPage() {
                 Nossos <span className="text-gradient-rainbow">valores</span>
               </h2>
               <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-2">
-                Princípios que guiam cada decisão e funcionalidade do SALLA
+                Princípios que guiam cada decisão e funcionalidade do ParlorHub
               </p>
             </div>
 
@@ -191,7 +191,7 @@ export default function AboutPage() {
                 Nossa <span className="text-gradient-rainbow">jornada</span>
               </h2>
               <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-2">
-                A evolução do SALLA desde a primeira ideia até hoje
+                A evolução do ParlorHub desde a primeira ideia até hoje
               </p>
             </div>
 
@@ -222,7 +222,7 @@ export default function AboutPage() {
                 Conheça os <span className="text-gradient-rainbow">fundadores</span>
               </h2>
               <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-2">
-                Quem está por trás da revolução do SALLA
+                Quem está por trás da revolução do ParlorHub
               </p>
             </div>
 

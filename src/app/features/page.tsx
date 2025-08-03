@@ -141,7 +141,7 @@ export default function FeaturesPage() {
 
               {/* Subheadline */}
               <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed transition-all duration-500 animate-slide-up animate-stagger-2">
-                <strong className="text-gray-700">Cada recurso do SALLA</strong> foi desenvolvido para resolver problemas reais dos salões de beleza.
+                <strong className="text-gray-700">Cada recurso do ParlorHub</strong> foi desenvolvido para resolver problemas reais dos salões de beleza.
               </p>
 
             </div>
@@ -206,7 +206,7 @@ export default function FeaturesPage() {
                 Integração com <span className="text-gradient-rainbow">tudo</span> que você usa
               </h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                SALLA se conecta com suas ferramentas favoritas para uma experiência perfeita
+                ParlorHub se conecta com suas ferramentas favoritas para uma experiência perfeita
               </p>
             </div>
 
@@ -242,7 +242,7 @@ export default function FeaturesPage() {
               Experimente todos os recursos
             </h2>
             <p className="text-xl md:text-2xl mb-12 opacity-95 drop-shadow-sm">
-              14 dias grátis para descobrir como o SALLA pode transformar seu salão
+              14 dias grátis para descobrir como o ParlorHub pode transformar seu salão
             </p>
 
             <div className="flex flex-col sm:flex-row gap-2 justify-center animate-slide-up animate-stagger-2">

@@ -45,7 +45,7 @@ export default function HeaderHome() {
             </div>
             <div className="flex flex-col">
               <span className="text-lg sm:text-xl font-black text-gray-900 group-hover:text-gradient transition-all duration-300 font-inter uppercase">
-                SALLA
+                ParlorHub
               </span>
               <span className="text-xs text-gray-500 -mt-1 hidden sm:block group-hover:text-gray-600 transition-colors duration-300">
                 Assistente Inteligente
