@@ -62,7 +62,7 @@ export default function LandingPage() {
 
             {/* Subheadline */}
             <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-8 sm:mb-12 leading-relaxed animate-slide-up animate-stagger-2 px-2">
-              <strong className="text-gray-700">SALLA é o sistema mais rápido do mercado.</strong> Assistente inteligente que transforma seu salão em uma máquina de lucro, otimizando cada processo com tecnologia de ponta.
+              <strong className="text-gray-700">ParlorHub é o sistema mais rápido do mercado.</strong> Assistente inteligente que transforma seu salão em uma máquina de lucro, otimizando cada processo com tecnologia de ponta.
             </p>
 
             {/* CTA Buttons */}

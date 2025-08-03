@@ -36,14 +36,14 @@ export default function ContactPage() {
     },
     {
       title: 'Vendas',
-      description: 'Quer conhecer melhor o SALLA? Fale com nossos especialistas.',
+      description: 'Quer conhecer melhor o ParlorHub? Fale com nossos especialistas.',
       icon: '📞',
       response: 'Resposta imediata',
       channels: ['Chamada agendada', 'WhatsApp', 'Email'],
     },
     {
       title: 'Parcerias',
-      description: 'Interessado em se tornar um parceiro oficial do SALLA?',
+      description: 'Interessado em se tornar um parceiro oficial do ParlorHub?',
       icon: '🤝',
       response: 'Resposta em 24h',
       channels: ['Email dedicado', 'Reunião virtual'],
@@ -280,7 +280,7 @@ export default function ContactPage() {
                 },
                 {
                   title: 'Email',
-                  info: 'contato@salla.com.br',
+                  info: 'contato@parlorhub.com.br',
                   description: 'Resposta em até 2h',
                   icon: '📧',
                 },

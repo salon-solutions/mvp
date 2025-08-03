@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: 'Salon Assistant - Transforme seu salão em uma experiência única',
+    title: 'ParlorHub - Transforme seu salão em uma experiência única',
     description:
         'O primeiro assistente inteligente que transforma cada agendamento em uma oportunidade de encantar. Agendamento automático, análise preditiva e experiência premium.',
 };
