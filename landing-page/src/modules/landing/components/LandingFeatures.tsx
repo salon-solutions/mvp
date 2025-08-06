@@ -10,7 +10,7 @@ export function LandingFeatures() {
     <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-slide-up">
+        <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-6 text-gray-900">
             {landingConfig.features.title}
           </h2>
@@ -22,7 +22,7 @@ export function LandingFeatures() {
         {/* Features Grid */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Feature Cards */}
-          <div className="space-y-6 animate-slide-up animate-stagger-2">
+          <div className="space-y-6">
             {featuresData.map((feature, index) => (
               <div
                 key={index}
@@ -55,10 +55,10 @@ export function LandingFeatures() {
           </div>
 
           {/* Feature Visual */}
-          <div className="animate-slide-up animate-stagger-3">
+          <div className="">
             <div className="bg-gradient-rainbow p-8 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]">
               <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 text-center">
-                <div className="text-6xl mb-4 animate-bounce-gentle">
+                <div className="text-6xl mb-4">
                   {featuresData[activeFeature].icon}
                 </div>
                 <h3 className="text-2xl font-black text-white mb-4">

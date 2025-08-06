@@ -27,7 +27,7 @@ export default function AboutTimeline({ title, subtitle, timeline }: AboutTimeli
             >
               {/* Timeline content - centered */}
               <div className="w-full">
-                <div className="bg-white p-4 sm:p-6 md:p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="bg-white p-4 sm:p-6 md:p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02]">
                   <h3 className="text-lg sm:text-xl md:text-2xl font-black text-gray-900 mb-3 sm:mb-4">{item.title}</h3>
                   <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{item.description}</p>
                 </div>

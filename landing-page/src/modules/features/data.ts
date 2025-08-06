@@ -140,9 +140,10 @@ export const featuresConfig = {
     subtitle: 'ParlorHub se conecta com suas ferramentas favoritas para uma experiência perfeita',
   },
   cta: {
-    title: 'Experimente todos os recursos',
-    subtitle: '14 dias grátis para descobrir como o ParlorHub pode transformar seu salão',
-    primaryButton: 'Começar teste grátis',
-    secondaryButton: 'Ver demonstração',
+    title: 'Pronto para transformar seu salão?',
+    subtitle: 'Junte-se aos salões que já descobriram o poder da tecnologia',
+    primaryButton: 'Começar agora - Grátis',
+    secondaryButton: 'Falar com especialista',
+    guarantee: '14 dias grátis • Sem cartão de crédito • Suporte completo',
   },
 };

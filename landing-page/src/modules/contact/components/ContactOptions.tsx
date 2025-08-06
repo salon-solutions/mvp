@@ -8,7 +8,7 @@ export default function ContactOptions({ options }: ContactOptionsProps) {
   return (
     <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50/30">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-8 mb-20 animate-slide-up animate-stagger-3">
+        <div className="grid md:grid-cols-3 gap-8 mb-20">
           {options.map((option, index) => (
             <div
               key={index}

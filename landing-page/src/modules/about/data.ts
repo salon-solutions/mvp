@@ -25,37 +25,37 @@ export const teamData: TeamMember[] = [
   {
     name: 'Daniel',
     role: 'CEO & Fundador',
-    description: 'Criou o ParlorHub para revolucionar a velocidade das soluções para salões.',
+    description: 'Desenvolvedor com experiência em criar soluções tecnológicas para pequenos negócios.',
   },
   {
-    name: 'N',
+    name: 'Natan',
     role: 'CTO & Fundador',
-    description: 'Co-fundador focado na arquitetura técnica e operações do ParlorHub.',
+    description: 'Co-fundador responsável pela arquitetura técnica e desenvolvimento do ParlorHub.',
   },
 ];
 
 export const valuesData: Value[] = [
   {
     title: 'Simplicidade',
-    description: 'Tecnologia avançada com interface simples e intuitiva.',
+    description: 'Desenvolvemos soluções com interface simples e intuitiva.',
     icon: '🪄',
     gradient: 'from-blue-500 to-cyan-500',
   },
   {
     title: 'Parceria',
-    description: 'Não somos apenas fornecedores, somos parceiros do seu sucesso.',
+    description: 'Trabalhamos junto com nossos clientes para o sucesso mútuo.',
     icon: '🤝',
     gradient: 'from-purple-500 to-pink-500',
   },
   {
-    title: 'Inovação',
-    description: 'Sempre evoluindo para trazer o melhor da tecnologia para salões.',
+    title: 'Evolução',
+    description: 'Sempre melhorando e adicionando novas funcionalidades.',
     icon: '🚀',
     gradient: 'from-orange-500 to-red-500',
   },
   {
     title: 'Resultados',
-    description: 'Focamos em métricas que realmente importam para seu negócio.',
+    description: 'Focamos em métricas que realmente importam para o negócio.',
     icon: '📈',
     gradient: 'from-emerald-500 to-teal-500',
   },
@@ -63,33 +63,33 @@ export const valuesData: Value[] = [
 
 export const timelineData: TimelineItem[] = [
   {
-    title: 'Fundação da dupla',
-    description: 'Daniel e Natan, frustrados com a lentidão das soluções existentes para salão, decidiram criar algo revolucionário.',
+    title: 'Início do projeto',
+    description: 'Daniel e Natan começaram a desenvolver o ParlorHub para atender às necessidades específicas de salões de beleza.',
   },
   {
-    title: 'MVP lançado',
-    description: 'Lançamento do primeiro MVP do ParlorHub pelos co-fundadores, com funcionalidades essenciais e foco na velocidade.',
+    title: 'Primeira versão',
+    description: 'Lançamento da primeira versão do ParlorHub com funcionalidades essenciais de agendamento e gestão.',
   },
 ];
 
 export const goalsData: Goal[] = [
-  { title: 'Velocidade', description: 'Sistema mais rápido do mercado' },
-  { title: 'Simplicidade', description: 'Interface intuitiva e fácil' },
-  { title: 'Resultados', description: 'Foco no crescimento do salão' },
+  { title: 'Simplicidade', description: 'Interface intuitiva e fácil de usar' },
+  { title: 'Confiabilidade', description: 'Sistema estável e seguro' },
+  { title: 'Crescimento', description: 'Ajudar salões a crescer sustentavelmente' },
 ];
 
 export const aboutConfig = {
   hero: {
     badge: 'Nossa história',
     title: 'Criado por quem entende',
-    subtitle: 'ParlorHub nasceu da frustração real de Daniel e Natan com a lentidão das soluções existentes para salões de beleza.',
+    subtitle: 'ParlorHub nasceu da experiência real de Daniel e Natan no desenvolvimento de soluções para salões de beleza.',
   },
   mission: {
     title: 'Nossa missão',
-    headline: 'Revolucionar a velocidade das soluções para salões',
-    description: 'Cansados da lentidão das soluções existentes, Daniel e Natan criaram o ParlorHub para ser a plataforma mais rápida e eficiente do mercado de beleza.',
-    extraDescription: 'Com expertise em desenvolvimento, marketing, gerenciamento e finanças, os co-fundadores eliminam a frustração com sistemas lentos, oferecendo uma experiência fluida na velocidade do seu negócio.',
-    goal: 'Criar a plataforma mais rápida e eficiente para salões de beleza no Brasil, eliminando a frustração com sistemas lentos.',
+    headline: 'Simplificar a gestão de salões de beleza',
+    description: 'Com experiência em desenvolvimento e gestão, Daniel e Natan criaram o ParlorHub para oferecer uma solução moderna e eficiente para salões.',
+    extraDescription: 'Focamos em criar uma plataforma intuitiva que realmente atenda às necessidades diárias de proprietários e profissionais de salões de beleza.',
+    goal: 'Desenvolver uma plataforma confiável e eficiente para salões de beleza, simplificando a gestão diária.',
   },
   values: {
     title: 'Nossos valores',
@@ -101,12 +101,12 @@ export const aboutConfig = {
   },
   team: {
     title: 'Conheça os fundadores',
-    subtitle: 'Quem está por trás da revolução do ParlorHub',
+    subtitle: 'Quem está por trás do desenvolvimento do ParlorHub',
   },
   cta: {
-    title: 'Junte-se à nossa história',
-    subtitle: 'Seja parte da revolução tecnológica que está transformando salões em todo o Brasil',
+    title: 'Faça parte da nossa jornada',
+    subtitle: 'Experimente o ParlorHub e veja como podemos ajudar seu salão a crescer',
     primaryButton: 'Começar agora',
-    secondaryButton: 'Conheça nossa equipe',
+    secondaryButton: 'Falar com a equipe',
   },
 };

@@ -23,7 +23,7 @@ export default function AboutValues({ title, subtitle, values }: AboutValuesProp
           {values.map((value, index) => (
             <div
               key={index}
-              className="bg-white p-4 sm:p-6 md:p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-center"
+              className="bg-white p-4 sm:p-6 md:p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02] text-center"
             >
               <div className={`w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-2xl mb-3 sm:mb-4 md:mb-6 flex items-center justify-center bg-gradient-to-r ${value.gradient} shadow-lg mx-auto`}>
                 <span className="text-lg sm:text-xl md:text-2xl text-white">{value.icon}</span>

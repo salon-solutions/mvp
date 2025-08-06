@@ -5,12 +5,6 @@ export interface Feature {
   benefit: string;
 }
 
-export interface Stat {
-  value: string;
-  label: string;
-  icon: string;
-}
-
 export interface Testimonial {
   name: string;
   role: string;
@@ -41,35 +35,12 @@ export const featuresData: Feature[] = [
   },
 ];
 
-export const statsData: Stat[] = [
-  {
-    value: '5.000+',
-    label: 'Salões usando',
-    icon: '💼',
-  },
-  {
-    value: '300%',
-    label: 'Aumento médio na receita',
-    icon: '📈',
-  },
-  {
-    value: '95%',
-    label: 'Redução em faltas',
-    icon: '✅',
-  },
-  {
-    value: '24/7',
-    label: 'Suporte disponível',
-    icon: '🔧',
-  },
-];
-
 export const landingConfig = {
   hero: {
-    badge: 'IA para salões de beleza',
+    badge: 'Plataforma para salões de beleza',
     title: 'Transforme seu salão',
-    subtitle: 'com inteligência artificial',
-    description: 'A primeira plataforma de gestão com IA que realmente entende seu negócio. Aumente sua receita em até 300% e reduza faltas em 95%.',
+    subtitle: 'com gerenciamento inteligente',
+    description: 'Uma plataforma de gestão moderna que realmente entende seu negócio. Aumente sua receita e reduza faltas com tecnologia inteligente.',
     primaryButton: 'Começar teste grátis',
     secondaryButton: 'Ver demonstração',
   },
@@ -77,13 +48,10 @@ export const landingConfig = {
     title: 'Por que o ParlorHub é diferente?',
     subtitle: 'Não é só um sistema. É seu parceiro inteligente.',
   },
-  stats: {
-    title: 'Resultados que falam por si',
-    subtitle: 'Mais de 5.000 salões já confiam no ParlorHub',
-  },
+
   cta: {
     title: 'Pronto para transformar seu salão?',
-    subtitle: 'Junte-se a milhares de salões que já descobriram o poder da IA',
+    subtitle: 'Junte-se aos salões que já descobriram o poder da tecnologia',
     primaryButton: 'Começar agora - Grátis',
     secondaryButton: 'Falar com especialista',
     guarantee: '14 dias grátis • Sem cartão de crédito • Suporte completo',

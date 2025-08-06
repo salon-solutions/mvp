@@ -8,7 +8,7 @@ export default function ContactInfoSection({ contactInfo }: ContactInfoSectionPr
   return (
     <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50/30">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-8 animate-slide-up animate-stagger-4">
+        <div className="grid md:grid-cols-3 gap-8">
           {contactInfo.map((contact, index) => (
             <div
               key={index}

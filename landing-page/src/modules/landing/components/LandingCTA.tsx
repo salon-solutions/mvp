@@ -8,7 +8,7 @@ export function LandingCTA() {
       <div className="absolute top-0 right-0 w-96 h-96 bg-white/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/15 rounded-full blur-2xl"></div>
 
-      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center text-white animate-slide-up">
+      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center text-white">
         <h2 className="text-3xl sm:text-4xl md:text-6xl font-black mb-6 drop-shadow-sm">
           {landingConfig.cta.title}
         </h2>
@@ -16,7 +16,7 @@ export function LandingCTA() {
           {landingConfig.cta.subtitle}
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 animate-slide-up animate-stagger-2">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <Link
             href="/contact"
             className="bg-white text-gray-800 px-8 py-4 rounded-2xl font-black text-lg sm:text-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 flex items-center justify-center shadow-xl"
@@ -33,7 +33,7 @@ export function LandingCTA() {
           </Link>
         </div>
 
-        <p className="text-sm text-white/80 animate-fade-in animate-stagger-3">
+        <p className="text-sm text-white/80">
           {landingConfig.cta.guarantee}
         </p>
       </div>

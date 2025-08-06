@@ -12,13 +12,13 @@ export function LandingHero() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-32">
         <div className="text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-50 to-purple-50 text-indigo-600 px-5 py-2.5 rounded-full text-sm font-semibold mb-8 border border-indigo-100 shadow-sm animate-fade-in hover-glow">
-            <i className="iconify solar:magic-stick-3-bold text-lg text-purple-500 animate-bounce-gentle"></i>
+                    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-50 to-purple-50 text-indigo-600 px-5 py-2.5 rounded-full text-sm font-semibold mb-8 border border-indigo-100 shadow-sm transition-all duration-500 hover:scale-[1.02]">
+            <i className="iconify solar:magic-stick-3-bold text-lg text-purple-500"></i>
             {landingConfig.hero.badge}
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-[0.9] mb-6 text-gray-900 animate-slide-up">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-[0.9] mb-6 text-gray-900">
             <span className="text-gradient-rainbow hover:scale-[1.02] transition-transform duration-500">
               {landingConfig.hero.title}
             </span>
@@ -28,12 +28,12 @@ export function LandingHero() {
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-12 leading-relaxed transition-all duration-500 animate-slide-up animate-stagger-2">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-12 leading-relaxed transition-all duration-500">
             {landingConfig.hero.description}
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-slide-up animate-stagger-3">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Link
               href="/contact"
               className="bg-gradient-rainbow text-white px-8 py-4 rounded-2xl font-black text-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 flex items-center justify-center shadow-xl hover-glow"
@@ -51,7 +51,7 @@ export function LandingHero() {
           </div>
 
           {/* Trust Indicators */}
-          <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-gray-500 animate-fade-in animate-stagger-4">
+          <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-gray-500">
             <div className="flex items-center gap-2">
               <i className="iconify solar:shield-check-bold text-green-500 text-lg"></i>
               <span>Sem compromisso</span>
@@ -59,10 +59,6 @@ export function LandingHero() {
             <div className="flex items-center gap-2">
               <i className="iconify solar:clock-circle-bold text-blue-500 text-lg"></i>
               <span>Configuração em 5 min</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <i className="iconify solar:users-group-two-rounded-bold text-purple-500 text-lg"></i>
-              <span>5.000+ salões confiam</span>
             </div>
           </div>
         </div>
