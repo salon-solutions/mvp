@@ -23,7 +23,7 @@ export default function AboutTeam({ title, subtitle, team }: AboutTeamProps) {
           {team.map((member, index) => (
             <div
               key={index}
-              className="bg-white p-4 sm:p-6 md:p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-center"
+              className="bg-white p-4 sm:p-6 md:p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02] text-center"
             >
               <div className={`w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-3xl mx-auto mb-3 sm:mb-4 md:mb-6 shadow-lg flex items-center justify-center ${
                 index === 0 ? 'bg-gradient-to-r from-blue-500 to-cyan-500' : 'bg-gradient-to-r from-purple-500 to-pink-500'

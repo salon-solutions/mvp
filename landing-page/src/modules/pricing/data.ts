@@ -95,7 +95,7 @@ export const faqData: FAQ[] = [
   },
   {
     question: 'Os dados ficam seguros?',
-    answer: 'Absolutamente! Usamos criptografia de nível bancário e nossos servidores são hospedados na AWS com backup automático diário.',
+    answer: 'Absolutamente! Usamos criptografia em diversas etapas da plataforma',
   },
 ];
 
@@ -105,13 +105,11 @@ export const pricingConfig = {
     title: 'Invista no crescimento',
     subtitle: 'Escolha o plano ideal para seu salão e comece a ver resultados em dias, não meses.',
   },
-  guarantee: {
-    title: 'Garantia de 30 dias',
-    description: 'Se não ficar 100% satisfeito, devolvemos seu dinheiro.',
-  },
   cta: {
     title: 'Pronto para transformar seu salão?',
-    subtitle: 'Junte-se a mais de 5.000 salões que já confiam no ParlorHub',
-    buttonText: 'Começar teste grátis',
+    subtitle: 'Junte-se aos salões que já descobriram o poder da tecnologia',
+    primaryButton: 'Começar agora - Grátis',
+    secondaryButton: 'Falar com especialista',
+    guarantee: '14 dias grátis • Sem cartão de crédito • Suporte completo',
   },
 };

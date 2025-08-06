@@ -2,7 +2,6 @@
 
 import { LandingHero } from './LandingHero';
 import { LandingFeatures } from './LandingFeatures';
-import { LandingStats } from './LandingStats';
 import { LandingCTA } from './LandingCTA';
 
 export function LandingPage() {
@@ -10,7 +9,6 @@ export function LandingPage() {
     <div className="min-h-screen bg-white">
       <LandingHero />
       <LandingFeatures />
-      <LandingStats />
       <LandingCTA />
     </div>
   );

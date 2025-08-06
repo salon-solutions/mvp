@@ -112,7 +112,7 @@ export default function Footer() {
             <div className="flex flex-col gap-3">
               <input
                 type="email"
-                placeholder="maria@salaobeleza.com.br"
+                placeholder="seu@email.com"
                 className="bg-gray-700 border-2 border-gray-600 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-indigo-400 focus:bg-gray-600 transition-all duration-300 placeholder:text-gray-300 placeholder:font-medium"
               />
               <button className="bg-gradient-rainbow text-white px-4 py-2.5 rounded-lg font-medium hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 text-sm">

@@ -34,7 +34,7 @@ export default function ContactForm({ title, subtitle }: ContactFormProps) {
   return (
     <section className="py-20">
       <div className="max-w-4xl mx-auto px-6">
-        <div className="text-center mb-16 animate-slide-up">
+        <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black mb-6 text-gray-900">
             Envie sua <span className="text-gradient-rainbow">mensagem</span>
           </h2>
@@ -43,7 +43,7 @@ export default function ContactForm({ title, subtitle }: ContactFormProps) {
           </p>
         </div>
 
-        <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 animate-slide-up animate-stagger-2">
+        <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
           <form onSubmit={handleSubmit} className="space-y-8">
             {/* Contact Type */}
             <div>
@@ -158,7 +158,6 @@ export default function ContactForm({ title, subtitle }: ContactFormProps) {
                 type="submit"
                 className="bg-gradient-rainbow text-white px-10 py-4 rounded-2xl font-black text-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 flex items-center justify-center gap-2 mx-auto shadow-xl"
               >
-                <span className="text-xl">✈️</span>
                 Enviar mensagem
               </button>
             </div>

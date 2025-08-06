@@ -21,7 +21,7 @@ export default function AboutCTA({ title, subtitle, primaryButton, secondaryButt
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-2 justify-center px-4">
-          <button className="bg-white text-gray-800 px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-black text-lg sm:text-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center shadow-xl">
+          <button className="bg-white text-gray-800 px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-black text-lg sm:text-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 flex items-center justify-center shadow-xl">
             {primaryButton}
           </button>
           <button className="border-2 border-white/40 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-bold text-lg sm:text-xl hover:bg-white/15 transition-all duration-300 flex items-center justify-center backdrop-blur-sm">

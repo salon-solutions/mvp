@@ -18,7 +18,7 @@ export function FeaturesGrid() {
               {category.features.map((feature, featureIndex) => (
                 <div 
                   key={feature.title}
-                  className="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105"
+                  className="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02]"
                 >
                   <div className="text-4xl mb-4">{feature.icon}</div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>

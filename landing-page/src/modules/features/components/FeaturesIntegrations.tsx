@@ -17,7 +17,7 @@ export function FeaturesIntegrations() {
           {integrationsData.map((integration, index) => (
             <div 
               key={integration.name}
-              className="bg-white rounded-xl p-6 text-center border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:transform hover:scale-105"
+              className="bg-white rounded-xl p-6 text-center border border-gray-200 shadow-sm hover:shadow-md transition-all duration-500 hover:scale-[1.02]"
             >
               <div className="text-4xl mb-3">{integration.icon}</div>
               <h3 className="text-gray-700 font-medium">{integration.name}</h3>
