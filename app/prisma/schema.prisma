@@ -10,6 +10,13 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+generator kysely {
+  provider     = "prisma-kysely"
+  output       = "../src/db"
+  fileName     = "types.ts"
+  enumFileName = "enums.ts"
+}
+
 model Account {
   id                String  @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
   userId            String  @db.Uuid
@@ -38,16 +45,18 @@ model Session {
 }
 
 model User {
-  id            String    @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
-  name          String?
-  email         String    @unique
+  id            String         @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  name          String
+  email         String         @unique
   emailVerified DateTime?
   image         String?
   password      String?
   accounts      Account[]
   sessions      Session[]
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime  @updatedAt
+  salons        Salon[]        @relation("OwnerSalons")
+  professionals Professional[]
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
 }
 
 model VerificationToken {
@@ -57,4 +66,121 @@ model VerificationToken {
   expires    DateTime
 
   @@unique([identifier, token])
+}
+
+model Salon {
+  id            String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  name          String
+  slug          String   @unique
+  ownerId       String   @db.Uuid
+  owner         User     @relation("OwnerSalons", fields: [ownerId], references: [id])
+  address       String
+  whatsapp      String?
+  businessHours Json // { monday: {...}, tuesday: {...}, ... }
+  logoUrl       String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  professionals Professional[]
+  services      Service[]
+  appointments  Appointment[]
+  clients       Client[]
+}
+
+model Professional {
+  id        String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  userId    String   @db.Uuid
+  salonId   String   @db.Uuid
+  name      String
+  photoUrl  String
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user         User          @relation(fields: [userId], references: [id])
+  salon        Salon         @relation(fields: [salonId], references: [id])
+  services     Service[]
+  appointments Appointment[]
+}
+
+model Service {
+  id             String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  salonId        String   @db.Uuid
+  professionalId String?  @db.Uuid
+  name           String
+  duration       Int // minutes
+  price          Int // cents
+  active         Boolean  @default(true)
+  createdAt      DateTime @default(now())
+
+  salon        Salon         @relation(fields: [salonId], references: [id])
+  professional Professional? @relation(fields: [professionalId], references: [id])
+  appointments Appointment[]
+}
+
+enum AppointmentStatus {
+  pending
+  confirmed
+  cancelled
+  done
+  no_show
+}
+
+model Appointment {
+  id             String            @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  salonId        String            @db.Uuid
+  professionalId String            @db.Uuid
+  serviceId      String            @db.Uuid
+  clientName     String
+  clientPhone    String
+  clientEmail    String?
+  date           DateTime // date of appointment
+  startTime      String // "HH:mm"
+  endTime        String // "HH:mm"
+  status         AppointmentStatus @default(pending)
+  notes          String?
+  createdAt      DateTime          @default(now())
+
+  salon         Salon          @relation(fields: [salonId], references: [id])
+  professional  Professional   @relation(fields: [professionalId], references: [id])
+  service       Service        @relation(fields: [serviceId], references: [id])
+  notifications Notification[]
+}
+
+model Client {
+  id                String    @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  salonId           String    @db.Uuid
+  name              String
+  phone             String
+  email             String?
+  birthday          DateTime?
+  totalAppointments Int       @default(0)
+  lastAppointment   DateTime?
+  createdAt         DateTime  @default(now())
+
+  salon Salon @relation(fields: [salonId], references: [id])
+}
+
+enum NotificationType {
+  whatsapp
+  email
+  sms
+}
+
+enum NotificationStatus {
+  queued
+  sent
+  failed
+}
+
+model Notification {
+  id            String             @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  appointmentId String             @db.Uuid
+  type          NotificationType
+  status        NotificationStatus
+  scheduledAt   DateTime
+  sentAt        DateTime?
+  createdAt     DateTime           @default(now())
+
+  appointment Appointment @relation(fields: [appointmentId], references: [id])
 }
